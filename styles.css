@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 16px 32px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+
+
+.request-btn {
+    font-size: 25px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background-color: grey
+
+}
+
+.signup-btn {
+    font-size: 25px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background-color: #4C5FD5;
+}
+.signup-btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #dadbf1;
+    padding: 80px 20px;
+}
+
+.search-section h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.search-box:hover {
+    box-shadow: 0 6px 12px rgba(39, 44, 49, 0.15);
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px 0 0 6px;
+}
+
+.search-box button {
+    padding: 12px 16px;
+    background-color: #4C5FD5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0 6px 6px 0;
+}
+
+.content {
+    padding: 80px 20px;
+    background-color: #fff;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.help-card {
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.help-card h2 {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.help-card p {
+    font-size: 25px; 
+    padding-bottom: 15px;   
+    font: bold;
+}
+
+.help-card a {
+    color: rgb(19, 76, 184);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-card a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    padding: 60px 30px; 
+    background-color: #000000;
+    font-size: 14px;
+    font-family: 'segoe UI', Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.ft-container {
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+
+}
+
+.ft {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.ft h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.ft a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.ft a:hover {
+    text-decoration: underline;
+
+}
+
+
+/* ---------- MOBILE RESPONSIVENESS ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .request-btn,
+  .signup-btn {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .search-section h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .search-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+    border-radius: 0;
+    font-size: 16px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .help-card h2 {
+    font-size: 24px;
+  }
+
+  .help-card p {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .ft-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ft h2 {
+    font-size: 20px;
+  }
+
+  .ft a {
+    font-size: 14px;
+  }
+}
